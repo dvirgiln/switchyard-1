@@ -32,6 +32,7 @@
             org.switchyard.config.model;org.switchyard.*;${switchyard.osgi.import.switchyard.version},
             *
         </switchyard.osgi.import>
+        <enforcer.skip>true</enforcer.skip>
     </properties>
     <dependencies>
         <!--
@@ -56,6 +57,11 @@
             <groupId>org.switchyard.components</groupId>
             <artifactId>switchyard-component-camel-test</artifactId>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.jboss.spec.javax.servlet</groupId>
+            <artifactId>jboss-servlet-api_2.5_spec</artifactId>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 </project>
