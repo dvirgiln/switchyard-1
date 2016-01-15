@@ -125,7 +125,6 @@ public class WSDLReader {
             if (_wsdlURI == null) {
                 _wsdlURI = wsdlURI;
             }
-            LOGGER.trace("Retrieving document at '" + wsdlURI + "'");
             URL url = getURL(wsdlURI);
             InputStream inputStream = url.openStream();
             InputSource inputSource = new InputSource(inputStream);
